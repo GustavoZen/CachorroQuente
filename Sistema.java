@@ -68,10 +68,10 @@ public class Sistema {
 			c.ingredientes.add("batata palha");
 	}
 
-	static void selecionarBebida(int i, CachorroQuente c) {
+	static void selecionarBebida(CachorroQuente c) {
 		int bebida = 0;
 		while (bebida == 0) {
-			System.out.println("Qual a proteina do seu " + (i + 1) + "º cachorro quente:");
+			System.out.println("Qual a Bebida?");
 			System.out.println("1.Coca-Cola\n2.Delrio\n3.Suco do Chaves");
 			bebida = input.nextInt();
 			if (bebida == 1)
@@ -107,7 +107,7 @@ public class Sistema {
 				selecionarProteina(i, c);
 				selecionarQueijo(i, c);
 				selecionarIngredientes(i, c);
-				selecionarBebida(i, c);
+				selecionarBebida(c);
 				a.compras.add(c);
 			}
 			vendas.add(a);
