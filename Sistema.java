@@ -49,8 +49,8 @@ public class Sistema {
 	}
 
 	static void selecionarIngredientes(int i, CachorroQuente c) {
-		System.out.println("1.Sim\n2.Não");
 		System.out.println("O Aluno quer ketchup?");
+		System.out.println("1.Sim\n2.Não");
 		int r = input.nextInt();
 		if (r == 1)
 			c.ingredientes.add("ketchup");
@@ -96,7 +96,7 @@ public class Sistema {
 		while (r != 0) {
 			Aluno a = new Aluno();
 			System.out.println("Insira as informações do aluno\nNome:");
-			a.nome = input.nextLine();
+			a.nome = input.next();
 			System.out.println("Matricula:");
 			a.matricula = input.nextInt();
 			System.out.println(cont + "º cliente do dia");
@@ -114,5 +114,4 @@ public class Sistema {
 			cont++;
 		}
 	}
-
 }
